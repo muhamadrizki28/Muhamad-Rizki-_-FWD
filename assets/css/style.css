@@ -90,6 +90,18 @@ nav ul li:last-child a {
 }
 .header-text img {
   width: 4%;
+  animation: arrow 2s ease-in-out infinite alternate;
+}
+@keyframes arrow {
+  0% {
+    width: 4%;
+  }
+  50% {
+    width: 2%;
+  }
+  100% {
+    width: 4%;
+  }
 }
 main {
   width: 100%;
@@ -106,6 +118,7 @@ main > section {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
   margin-top: -0.43rem; /*Space top */
 }
 .box-main-all .box-box {
@@ -119,6 +132,7 @@ main > section {
   max-width: 100%;
 } */
 .box-main-text {
+  position: relative;
   padding: 5%;
   width: 100%;
 }
@@ -133,6 +147,10 @@ main > section {
   margin-top: 4rem;
   border-bottom: 1px solid tomato;
   width: fit-content;
+}
+.box-main-text p:hover:nth-child(3) {
+  position: relative;
+  background-color: rgba(246, 237, 14, 1);
 }
 .box-main2 img {
   width: 100%;
@@ -168,6 +186,7 @@ main > section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 .container-testi .testi-text {
   position: absolute;
@@ -180,6 +199,12 @@ main > section {
   opacity: 0.5;
   font-weight: bolder;
   font-family: "Lato", sans-serif;
+}
+.container-testi .testi-box1:hover,
+.container-testi .testi-box2:hover,
+.container-testi .testi-box3:hover {
+  transition: 1s;
+  box-shadow: 10px 10px 10px black;
 }
 .testi-box-all {
   position: relative;
@@ -218,6 +243,11 @@ main > section {
 }
 .box-image44 {
   width: 25%;
+  transform: scale(1.1);
+}
+.box-image44:hover {
+  transition: transform 0.7s;
+  transform: scale(1.3);
 }
 .box-image44 img {
   width: 100%;
@@ -255,6 +285,12 @@ footer > section {
 }
 .box-footer-text p {
   margin: 1rem 1rem;
+  cursor: default;
+}
+.box-footer-text p:hover,
+.box-sosmed a:hover {
+  color: #fff;
+  filter: brightness(3);
 }
 
 .box-footer .box-sosmed {
