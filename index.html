@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="assets/images/favicon-32x32.png"
     />
     <title>
       Frontend Mentor | Sunnyside agency landing page | Muhamad Rizki
@@ -27,7 +27,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active-C"><a href="#">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -40,7 +40,7 @@
     <main>
       <section>
         <div class="box-main1 box-main-all">
-          <div class="box-main-text">
+          <div class="box-main-text box-box">
             <h1>Transform your brand</h1>
             <p>
               We are a full-service creative agency specializing in helping
@@ -49,16 +49,20 @@
             </p>
             <p>Learn more</p>
           </div>
-          <img
-            src="assets/images/desktop/image-transform.jpg"
-            alt="image transform"
-          />
+          <div class="box-box">
+            <img
+              src="assets/images/desktop/image-transform.jpg"
+              alt="image transform"
+            />
+          </div>
         </div>
         <div class="box-main2 box-main-all">
-          <img
-            src="assets/images/desktop/image-stand-out.jpg"
-            alt="image transform"
-          />
+          <div class="box-box">
+            <img
+              src="assets/images/desktop/image-stand-out.jpg"
+              alt="image transform"
+            />
+          </div>
           <div class="box-main-text">
             <h1>Stand out to the right audience</h1>
             <p>
@@ -98,9 +102,37 @@
             </div>
           </div>
         </div>
-
         <!-- testimonial -->
-
+        <div class="container-testi">
+          <div class="testi-text">Client testimonials</div>
+          <div class="testi-box-all testi-box1">
+            <img src="assets/images/image-emily.jpg" alt="image emily" />
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h5>Emily R.</h5>
+            <p>Marketing Director</p>
+          </div>
+          <div class="testi-box-all testi-box2">
+            <img src="assets/images/image-thomas.jpg" alt="image thomas" />
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h5>Thomas S.</h5>
+            <p>Chief Operating Officer</p>
+          </div>
+          <div class="testi-box-all testi-box3">
+            <img src="assets/images/image-jennie.jpg" alt="image jennie" />
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h5>Jennie F.</h5>
+            <p>Business Owner</p>
+          </div>
+        </div>
         <!-- gambar4 -->
         <div class="box-image4">
           <div class="box-image44">
@@ -135,45 +167,26 @@
       <section>
         <div class="box-footer">
           <img src="assets/images/logo.svg" alt="" />
-          <p>About</p>
-          <p>Services</p>
-          <p>Projects</p>
+          <div class="box-footer-text">
+            <p>About</p>
+            <p>Services</p>
+            <p>Projects</p>
+          </div>
           <div class="box-sosmed">
             <img src="assets/images/icon-facebook.svg" alt="fb" />
             <img src="assets/images/icon-instagram.svg" alt="ig" />
-            <img src="assets/images/icon-twitter.svg" alt="twtw" />
+            <img src="assets/images/icon-twitter.svg" alt="twitter" />
             <img src="assets/images/icon-pinterest.svg" alt="pinterest" />
           </div>
         </div>
+        <div class="box-footer-title">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">MUHAMAD RIZKI</a>
+        </div>
       </section>
     </footer>
-    <!--
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
 
     <!-- JS -->
     <script type="text/javascript" src="assets/js/site.js"></script>
