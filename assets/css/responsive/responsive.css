@@ -1,1 +1,172 @@
 /* akan berisi style utk versi responsif */
+@media only screen and (max-width: 375px) {
+  * {
+    scroll-behavior: smooth;
+  }
+  /* back to top */
+  .back-to-top {
+    z-index: 9999;
+    position: fixed;
+    top: 90%;
+    font-size: 2.5rem;
+    right: 0.5rem;
+  }
+  .back-to-top a {
+    color: #fff;
+  }
+  .back-to-top a:hover {
+    color: black;
+  }
+  /* Header Nav */
+  header > section nav {
+    margin-left: 2rem;
+  }
+  header > section nav .menu-toggle {
+    display: block;
+  }
+  .menu {
+    border-radius: 2px;
+    z-index: 999;
+    width: 90%;
+    /* right: 100%; */
+    height: 0;
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    transition: height 1s;
+    background-color: white;
+  }
+  .menu ul li:first-child {
+    margin-top: 12rem;
+  }
+  .menu ul li.active:first-child {
+    margin-top: 0rem;
+  }
+  .menu.active {
+    opacity: 1;
+    height: 40vh;
+    /* right: 0; */
+  }
+  /* .menu-toggle.active::before {
+    content: '\f00d';
+    font-family: 'Font Awesome 5 Free';
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+  } */
+  .menu::after {
+    position: absolute;
+    z-index: 99999;
+    top: -1.2rem;
+    right: 0;
+    content: '';
+    font-size: 2rem;
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav ul li {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+  nav ul li a {
+    color: gray;
+    margin-right: 0rem;
+  }
+  nav ul li:last-child {
+    margin-top: 0rem;
+    padding: 3% 6%;
+    background-color: rgb(221, 221, 29);
+  }
+  nav ul li:last-child a {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  nav ul li.active-C:hover {
+    background-color: rgb(221, 221, 29);
+  }
+  /* Header image */
+  .header-text {
+    top: 18%;
+  }
+  .header-text img {
+    height: 17vh;
+    margin-top: 2rem;
+    font-weight: bolder;
+  }
+  /* Box */
+  .box-main-all {
+    flex-direction: column;
+  }
+  .box-main-text {
+    text-align: center;
+    padding: 10% 5%;
+  }
+  .box-main-text h1 {
+    font-size: 2rem;
+    margin: 0rem 0 2rem 0;
+  }
+  .box-main-text p:nth-child(2) {
+    margin-bottom: 4rem;
+  }
+  .box-main-text p:nth-child(3) {
+    margin: auto;
+    font-size: 1.2rem;
+  }
+
+  /* Box 2 */
+  .box-main1 {
+    flex-direction: column-reverse;
+  }
+  /* box 3 */
+  .gambar-all {
+    background-color: rgba(29, 185, 195, 0.48);
+  }
+  .box-main-text3 {
+    position: relative;
+    top: -5rem;
+    width: 90%;
+    margin: auto;
+  }
+  .box-main-text3 p {
+    font-size: 0.9rem;
+  }
+
+  /* Gambar 2 */
+  .gambar2 {
+    background-color: rgba(29, 185, 195, 0.7);
+  }
+
+  /* Testi */
+  .container-testi {
+    flex-direction: column;
+  }
+  .container-testi .testi-text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  /* gambar4 */
+  .box-image4 {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .box-image44 {
+    width: 100%;
+    flex: 0 0 50%;
+  }
+  .box-footer-title {
+    text-align: center;
+  }
+}
