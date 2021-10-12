@@ -1,8 +1,5 @@
 /* akan berisi style utk versi responsif */
 @media only screen and (max-width: 375px) {
-  * {
-    scroll-behavior: smooth;
-  }
   /* back to top */
   .back-to-top {
     z-index: 9999;

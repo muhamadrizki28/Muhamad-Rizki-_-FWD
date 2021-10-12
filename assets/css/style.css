@@ -32,6 +32,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 header > img {
   position: relative;
@@ -315,4 +316,17 @@ footer > section {
   text-decoration: none;
   color: #fff;
   opacity: 0.5;
+}
+.back-to-top {
+  z-index: 9999;
+  position: fixed;
+  top: 90%;
+  font-size: 2.5rem;
+  right: 0.5rem;
+}
+.back-to-top a {
+  color: #fff;
+}
+.back-to-top a:hover {
+  color: black;
 }
